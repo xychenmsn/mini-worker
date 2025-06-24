@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include MANIFEST.in
+recursive-include mini_worker *.py
+recursive-include examples *.py
+recursive-include tests *.py
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .DS_Store
