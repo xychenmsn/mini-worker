@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "mini-worker"
-dynamic = ["version"]
+version = "0.1.0"
 description = "A simple, parameter-driven worker framework with internal loops and file-based monitoring"
 readme = "README.md"
 license = {text = "MIT"}
@@ -48,8 +48,7 @@ Homepage = "https://github.com/xychenmsn/mini-worker"
 Repository = "https://github.com/xychenmsn/mini-worker"
 Issues = "https://github.com/xychenmsn/mini-worker/issues"
 
-[tool.setuptools_scm]
-write_to = "mini_worker/_version.py"
+
 
 [tool.setuptools.packages.find]
 include = ["mini_worker*"]
